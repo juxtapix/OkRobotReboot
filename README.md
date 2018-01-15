@@ -12,15 +12,15 @@ Today we no longer solely communicate with computers through a graphical user in
 ## Syllabus
 ### #1: TTS - Text to Speech / Speech Synthesis (01/24)
 - Goals and Requirements
-- Intro to Voice Interfaces
-- Speech Synthesis
+- [Intro to Voice Interfaces](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki)
+- [Speech Synthesis](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/01.-TTS)
 - Design Challenges
-- Assignment
+- [Assignment](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/01.-TTS#assignment)
 
 ### #2: STT - Speech to Text / Speech Recognition (01/31)
-- Speech Recognition
+- [Speech Recognition](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/02.-STT)
 - Design Challenges
-- Assignment
+- [Assignment](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/02.-STT#assignment)
 
 ### #3: AI - The Brain in the Machine (02/07)
 - Voice AI
