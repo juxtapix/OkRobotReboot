@@ -23,7 +23,7 @@ Today we no longer solely communicate with computers through a graphical user in
 - [Assignment](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/02.-STT#assignment)
 
 ### #3: AI - The Brain in the Machine (02/07)
-- Voice AI
+- [Voice AI](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/03.-AI)
 - Design Challenges
 - Google AIY Voice Kit
 - Assignment
