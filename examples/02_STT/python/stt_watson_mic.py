@@ -86,8 +86,8 @@ def on_open(ws):
 
 def connect():
     # websocket.enableTrace(True)
-    user = "9e0a3437-aa25-4a21-87e0-20fb1d02db63"
-    password = "UPu8SOsrz8eX"
+    user = "USER"
+    password = "PASS"
     url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel'
     headers = {}
     auth = user + ":" + password
