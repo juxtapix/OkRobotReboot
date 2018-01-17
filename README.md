@@ -48,8 +48,8 @@ Today we no longer solely communicate with computers through a graphical user in
 ## Requirements
 
 **Assessment**  
-Class Participation: 40%
-Assignments & Project: 60%
+Class Participation: ***40%***  
+Assignments & Project: ***60%***  
 More than one unexcused absence will result in a failing grade. Arriving to two classes more than 15 minutes late counts as an absence. Please notify me as early as possible if you are unable to come to class.
 
 **Conduct**  
