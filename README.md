@@ -26,7 +26,7 @@ Today we no longer solely communicate with computers through a graphical user in
 - [Voice AI](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/03.-AI)
 - Design Challenges
 - Google AIY Voice Kit
-- Assignment
+- [Assignment](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/03.-AI#assignment)
 
 ### #4: VUI - Meaningful Interactions (02/14)
 - Meaningful Interactions for Voice User Interfaces
