@@ -53,6 +53,6 @@ Assignments & Project: ***60%***
 More than one unexcused absence will result in a failing grade. Arriving to two classes more than 15 minutes late counts as an absence. Please notify me as early as possible if you are unable to come to class.
 
 **Conduct**  
-This class meets every Monday from 6:30 to 9:00 for the first 7 weeks. Please be punctual and respectful.  
-Assignment due dates are hard deadlines.
+This class meets every Wednesday from 6:30pm to 9:00pm for the first 7 weeks.  
+Please be punctual and respectful.Assignment due dates are hard deadlines.
 
