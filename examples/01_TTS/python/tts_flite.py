@@ -1,4 +1,6 @@
 # Example TTS - "flite"
+# To install flite please see Tech Resources:
+# https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/01.-TTS#technical-resources
 
 import os
 import sys

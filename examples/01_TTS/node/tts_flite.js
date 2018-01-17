@@ -1,4 +1,6 @@
-//Example TTS - "flite"
+// Example TTS - "flite"
+// To install flite please see Tech Resources:
+// https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/01.-TTS#technical-resources
 
 const exec = require('child_process').execSync;
 const util = require('util');
