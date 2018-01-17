@@ -5,8 +5,8 @@ const fs = require('fs');
 const WebSocket = require('ws');
 
 
-const user = "9e0a3437-aa25-4a21-87e0-20fb1d02db63";
-const password = "UPu8SOsrz8eX";
+const user = "USER";
+const password = "PASS";
 const url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel';
 
 var options = {
