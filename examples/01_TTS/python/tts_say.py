@@ -1,10 +1,11 @@
 # Example TTS - "say"
 
+# import "os" to access the Operating System functionalities
 import os
-import sys
 
 def say(something):
-    command = "say "
+    command = "say " # "say" in this case is a built-in shell command on MAC OS.
+    # command = "say -v \"Victoria\" "
     os.system(command + something)
 
 say(sys.argv[1])
