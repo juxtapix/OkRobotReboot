@@ -8,4 +8,4 @@ def say(something):
     # command = "say -v \"Victoria\" "
     os.system(command + something)
 
-say(sys.argv[1])
+say("Tell me what you want, what you really really want!")
