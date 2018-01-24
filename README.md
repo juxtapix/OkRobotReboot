@@ -47,12 +47,19 @@ Today we no longer solely communicate with computers through a graphical user in
 
 ## Requirements
 
+**Pre-requisites**  
+ICM or the equivalent.
+
 **Assessment**  
 Class Participation: ***40%***  
-Assignments & Project: ***60%***  
-More than one unexcused absence will result in a failing grade. Arriving to two classes more than 15 minutes late counts as an absence. Please notify me as early as possible if you are unable to come to class.
+Assignments: ***30%***  
+Final Project: ***30%***  
+More than one unexcused absence will result in a failing grade. Arriving to two classes more than 15 minutes late counts as an absence. Please notify me as early as possible if you are unable to come to class.  
+Assigments should be posted online 24h before the class.
+
 
 **Conduct**  
 This class meets every Wednesday from 6:30pm to 9:00pm for the first 7 weeks.  
-Please be punctual and respectful.Assignment due dates are hard deadlines.
+Please be punctual and respectful. Assignment due dates are hard deadlines.  
+Laptops must be closed while fellow classmates are presenting work. Please be respectfull with each other.  
 
