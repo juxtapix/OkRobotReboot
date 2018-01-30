@@ -1,5 +1,5 @@
 // Example STT - "watson Websockets"
-
+// npm install ws
 
 var fs = require('fs');
 var WebSocket = require('ws');
