@@ -1,12 +1,12 @@
 //Example STT - "watson JSON"
 // npm install request@2.81.0
 
-const fs = require('fs');
-const request = require('request');
+var fs = require('fs');
+var request = require('request');
 
 function listen(something){
-  const user = "USER";
-  const password = "PASS";
+  var user = "USER";
+  var password = "PASS";
   var data = new Buffer(fs.readFileSync(something));
   var options = {
       url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&max_alternatives=3',

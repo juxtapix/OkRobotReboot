@@ -1,18 +1,18 @@
 // Example STT - "watson Websockets"
 
 
-const fs = require('fs');
-const WebSocket = require('ws');
+var fs = require('fs');
+var WebSocket = require('ws');
 
 
-const user = "USER";
-const password = "PASS";
-const url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel';
+var user = "USER";
+var password = "PASS";
+var url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel';
 
 var options = {
     headers: {'Content-Type': 'audio/flac', 'Authorization': 'Basic OWUwYTM0MzctYWEyNS00YTIxLTg3ZTAtMjBmYjFkMDJkYjYzOlVQdThTT3NyejhlWA=='},
 };
-const ws = new WebSocket(url, options);
+var ws = new WebSocket(url, options);
 
 ws.on('open', function open() {
   var something = "_audio/audio-file.flac";
