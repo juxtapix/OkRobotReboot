@@ -1,5 +1,21 @@
-<p>
-  <s>This is the first sentence of the <break time="5s"/> paragraph. </s>
-  <s>Here is another sentence.</s>
-  <s>Finally, this is the last sentence.</s>
-</p>
+<speak version="1.0">
+
+  I have been assigned to handle your order status request.
+
+  <express-as type="Apology">
+    I am sorry to inform you that the items you requested are backordered. <break time="500ms"></break>
+    We apologize for the inconvenience.
+  </express-as>
+
+  <express-as type="Uncertainty">
+    We don&apos;t know when the items will become available. Maybe next week,
+    but we are not sure at this time.
+  </express-as>
+
+  <express-as type="GoodNews">
+    But... Because we want you to be a satisfied customer, we are giving you
+    a 50% discount on your order!
+  </express-as>
+
+
+</speak>
