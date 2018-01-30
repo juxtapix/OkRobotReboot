@@ -8,9 +8,10 @@ var WebSocket = require('ws');
 var user = "USER";
 var password = "PASS";
 var url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel';
+var auth = 'Basic ' + Buffer.from(user + ':' + password).toString('base64');
 
 var options = {
-    headers: {'Content-Type': 'audio/flac', 'Authorization': 'Basic OWUwYTM0MzctYWEyNS00YTIxLTg3ZTAtMjBmYjFkMDJkYjYzOlVQdThTT3NyejhlWA=='},
+    headers: {'Content-Type': 'audio/flac', 'Authorization': auth},
 };
 var ws = new WebSocket(url, options);
 

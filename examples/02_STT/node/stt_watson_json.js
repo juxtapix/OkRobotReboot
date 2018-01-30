@@ -7,11 +7,12 @@ var request = require('request');
 function listen(something){
   var user = "USER";
   var password = "PASS";
+  var auth = 'Basic ' + Buffer.from(user + ':' + password).toString('base64');
   var data = new Buffer(fs.readFileSync(something));
   var options = {
       url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&max_alternatives=3',
       method: 'POST',
-      headers: {'Content-Type': 'audio/flac', 'Authorization': 'Basic OWUwYTM0MzctYWEyNS00YTIxLTg3ZTAtMjBmYjFkMDJkYjYzOlVQdThTT3NyejhlWA=='},
+      headers: {'Content-Type': 'audio/flac', 'Authorization': auth},
       body: data
   };
   request.post(options, function (error, response, body) {
