@@ -32,7 +32,7 @@ Today we no longer solely communicate with computers through a graphical user in
 ### #4: VUI - Meaningful Interactions (02/14)
 - Meaningful Interactions for Voice User Interfaces
 - Google AIY Voice Kit
-- Final Assignment
+- [Final Assignment](https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/04.-VUI#final-assignment)
 
 ### #5: Designing for existing Devices (02/21)
 - Voice User Interface design
