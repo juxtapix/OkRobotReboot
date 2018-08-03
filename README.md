@@ -2,7 +2,7 @@
 
 Pedro Oliveira  
 pedro.itp@nyu.edu  
-NYU ITP, Spring 2015  
+NYU ITP, Spring 2018  
 WED 6:30-9:00pm (01/24 - 03/07)   
 
 ## Overview
