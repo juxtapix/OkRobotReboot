@@ -5,10 +5,9 @@ var fs = require('fs');
 var WebSocket = require('ws');
 
 
-var user = "USER";
-var password = "PASS";
-var auth = 'Basic ' + Buffer.from(user + ':' + password).toString('base64');
-var url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel';
+var APIkey = "YOUR_API_KEY";
+var url = "YOUR_API_URL";
+var auth = 'Basic ' + Buffer.from('apikey:' + APIkey).toString('base64');
 
 var options = {
     headers: {'Content-Type': 'audio/flac', 'Authorization': auth},
@@ -28,7 +27,7 @@ ws.on('open', function open() {
     };
 
   ws.send(JSON.stringify(settings));
-  var data = new Buffer(fs.readFileSync(something));
+  var data = new Buffer.from(fs.readFileSync(something));
   ws.send(data);
   var done = {"action": "stop"};
   ws.send(JSON.stringify(done));
