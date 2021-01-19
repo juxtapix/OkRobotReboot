@@ -5,11 +5,11 @@ import sys
 import urllib
 
 def say(something):
-    user = "USER"
-    password = "PASS"
+    APIkey = "YOUR_API_KEY"
+    url = "YOUR_API_URL"
     data = urllib.quote_plus(something)
     voice = "voice=en-US_AllisonVoice"
-    command = "curl -X GET -u \"{0}:{1}\" --output say.mp3 \"https://stream.watsonplatform.net/text-to-speech/api/v1/synthesize?accept=audio/mp3&text=\"{2}\"&{3}\" && afplay say.mp3 ".format(user,password,data,voice)
+    command = "curl -X GET -u \"apikey:{0}\" --output say.mp3 \"{1}/v1/synthesize?accept=audio/mp3&text=\"{2}\"&{3}\" && afplay say.mp3 ".format(APIkey,url,data,voice)
     os.system(command)
 
 def formatSSML(data):
