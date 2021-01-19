@@ -5,10 +5,10 @@ import sys
 import pipes
 
 def listen(something):
-    user = "USER"
-    password = "PASS"
+    APIkey = "YOUR_API_KEY"
+    url = "YOUR_API_URL"
     data = "@" + pipes.quote(something)
-    command = "curl -X POST -u \"{0}:{1}\" -H \"Content-Type: audio/flac\" --data-binary {2} \"https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&max_alternatives=3\" | grep -m1 \"transcript\" ".format(user,password,data)
+    command = "curl -X POST -u \"apikey:{0}\" -H \"Content-Type: audio/flac\" --data-binary {2} \"{1}/v1/recognize?timestamps=true&max_alternatives=3\" | grep -m1 \"transcript\" ".format(APIkey,url,data)
     print(command)
     output = os.popen(command).read()
     return output.lstrip()
