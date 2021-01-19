@@ -1,5 +1,6 @@
 # Example STT - "watson Websockets"
 # Modified example from "ibm-dev/watson-streaming-stt"
+# pip install websocket_client
 
 import os
 import sys
@@ -42,11 +43,10 @@ def on_open(ws):
 
 def connect():
     # websocket.enableTrace(True)
-    user = "USER"
-    password = "PASS"
-    url = 'wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel'
+    APIkey = "YOUR_API_KEY"
+    url = "YOUR_API_URL"
     headers = {}
-    auth = user + ":" + password
+    auth = "apikey:" + APIkey
     headers["Authorization"] = "Basic " + base64.b64encode(
         auth.encode()).decode()
     print(headers)
