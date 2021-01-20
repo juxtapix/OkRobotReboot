@@ -2,17 +2,19 @@
 # pip install requests
 
 import sys
+import base64
 import requests
 
 def listen(something):
-    user = "USER"
-    password = "PASS"
+    APIkey = 'YOUR_API_KEY'
+    url = 'YOUR_API_URL'
     data = open(something, 'rb').read()
-    url = 'https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&max_alternatives=3'
-    headers = {'Content-Type': 'audio/flac'}
-    r = requests.post(url=url, auth=(user, password), headers=headers, data=data)
+    auth = 'Basic ' + base64.b64encode('apikey:' + APIkey)
+    headers = {'Content-Type': 'audio/flac', 'Authorization': auth}
+    r = requests.post(headers=headers, url=url, data=data)
     with open("watson.json", "a") as myfile:
         myfile.write(r.text)
         print("Saved!")
+
 
 listen("_audio/audio-file.flac")
