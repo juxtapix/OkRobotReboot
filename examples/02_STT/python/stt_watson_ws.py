@@ -44,7 +44,9 @@ def on_open(ws):
 def connect():
     # websocket.enableTrace(True)
     APIkey = "YOUR_API_KEY"
-    url = "YOUR_API_URL"
+    endpoint = "/v1/recognize?timestamps=true&max_alternatives=3"
+    # wss instead of https for YOUR_API_URL
+    url = "YOUR_API_URL" + endpoint
     headers = {}
     auth = "apikey:" + APIkey
     headers["Authorization"] = "Basic " + base64.b64encode(

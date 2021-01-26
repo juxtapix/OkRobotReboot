@@ -1,7 +1,23 @@
 # Example STT - "watson streaming"
 # Modified example from "ibm-dev/watson-streaming-stt"
-# pip install websocket_client
+# --- windows only ---
+# pip install pipwin
+# pipwin install pyaudio
+# --------------------
+# --- mac only ---
+# xcode-select --install
+# brew install portaudio
+# ----------------
+# python3 -m venv .venv
+# source .venv/bin/activate
 # pip install pyaudio
+# pip install websocket_client
+# --- mac only ---
+# it is recommended to run this particular piece of python code with either Terminal or iTerm2(if you prefer)
+# allow microphone access if prompted
+# running this piece of python code in VSCode integrated terminal will not work unless running with VSCode with sudo (not recommended)
+# sudo /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron
+# ----------------
 
 import os
 import sys
@@ -64,6 +80,8 @@ def on_message(ws, message):
         print(data['results'][0]['alternatives'][0]['transcript'])
         done = {"action": "stop"}
         ws.send(json.dumps(done).encode('utf8'))
+    elif "error" in data:
+        print(data['error']) 
 
 def on_error(ws, error):
     print(error)
@@ -89,7 +107,9 @@ def on_open(ws):
 def connect():
     # websocket.enableTrace(True)
     APIkey = "YOUR_API_KEY"
-    url = "YOUR_API_URL"
+    endpoint = "/v1/recognize?timestamps=true&max_alternatives=3"
+    # wss instead of https for YOUR_API_URL
+    url = "YOUR_API_URL" + endpoint
     headers = {}
     auth = "apikey:" + APIkey
     headers["Authorization"] = "Basic " + base64.b64encode(

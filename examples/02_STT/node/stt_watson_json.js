@@ -6,7 +6,8 @@ var request = require('request');
 
 function listen(something){
   var APIkey = "YOUR_API_KEY";
-  var url = "YOUR_API_URL";
+  var endpoint = "/v1/recognize?timestamps=true&max_alternatives=3"
+  var url = "YOUR_API_URL" + endpoint;
   var auth = 'Basic ' + Buffer.from('apikey:' + APIkey).toString('base64');
   var data =  Buffer.from(fs.readFileSync(something));
   var options = {
