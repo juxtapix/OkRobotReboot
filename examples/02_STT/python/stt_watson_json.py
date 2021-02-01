@@ -1,4 +1,9 @@
 # Example STT - "watson JSON"
+# --- Python 2.x ---
+# sudo pip install requests
+# --- Python 3.x ---
+# python3 -m venv .venv
+# source .venv/bin/activate
 # pip install requests
 
 import sys
