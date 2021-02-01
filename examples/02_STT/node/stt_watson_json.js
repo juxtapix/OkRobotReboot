@@ -7,12 +7,13 @@ var request = require('request');
 function listen(something){
   var APIkey = "YOUR_API_KEY";
   var url = "YOUR_API_URL";
-  var auth = 'Basic ' + Buffer.from('apikey:' + APIkey).toString('base64');
+  var endpoint = "/v1/recognize?timestamps=true&max_alternatives=3";
+  var auth = 'apikey:' + APIkey;
   var data =  Buffer.from(fs.readFileSync(something));
   var options = {
       method: 'POST',
-      headers: {'Content-Type': 'audio/flac', 'Authorization': auth},
-      url: url,
+      headers: {'Content-Type': 'audio/flac', 'Authorization': 'Basic ' + Buffer.from(auth).toString('base64')},
+      url: url+endpoint,
       body: data
   };
   request.post(options, function (error, response, body) {
