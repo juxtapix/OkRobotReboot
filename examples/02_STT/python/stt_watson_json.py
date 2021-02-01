@@ -8,10 +8,12 @@ import requests
 def listen(something):
     APIkey = 'YOUR_API_KEY'
     url = 'YOUR_API_URL'
+    endpoint = '/v1/recognize?timestamps=true&max_alternatives=3'
     data = open(something, 'rb').read()
-    auth = 'Basic ' + base64.b64encode('apikey:' + APIkey)
-    headers = {'Content-Type': 'audio/flac', 'Authorization': auth}
-    r = requests.post(headers=headers, url=url, data=data)
+    auth = 'apikey:' + APIkey
+    headers = {'Content-Type': 'audio/flac', 'Authorization': 'Basic ' + base64.b64encode(
+        auth.encode()).decode()}
+    r = requests.post(headers=headers, url=url+endpoint, data=data)
     with open("watson.json", "a") as myfile:
         myfile.write(r.text)
         print("Saved!")
