@@ -1,7 +1,7 @@
 # Example TTS - "flite"
 
 # To install flite please see Tech Resources:
-# https://github.com/juxtapix/ExpressiveInterfaces_Voice/wiki/01.-TTS#technical-resources
+# https://github.com/juxtapix/OkRobotReboot/wiki/02.-TTS#technical-resources
 
 # import "os" to access operating system functionalities
 import os
