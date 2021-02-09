@@ -45,13 +45,13 @@ def connect():
     # websocket.enableTrace(True)
     APIkey = "YOUR_API_KEY"
     url = "YOUR_API_URL"
+    endpoint = '/v1/recognize?timestamps=true&max_alternatives=3'
+    auth = 'apikey:' + APIkey
     headers = {}
-    auth = "apikey:" + APIkey
-    headers["Authorization"] = "Basic " + base64.b64encode(
+    headers['Authorization'] = 'Basic ' + base64.b64encode(
         auth.encode()).decode()
-    print(headers)
 
-    ws = websocket.WebSocketApp(url,
+    ws = websocket.WebSocketApp(url+endpoint,
                               header=headers,
                               on_message = on_message,
                               on_error = on_error,
