@@ -7,12 +7,13 @@ var WebSocket = require('ws');
 
 var APIkey = "YOUR_API_KEY";
 var url = "YOUR_API_URL";
-var auth = 'Basic ' + Buffer.from('apikey:' + APIkey).toString('base64');
+var endpoint = "/v1/recognize?timestamps=true&max_alternatives=3";
+var auth = 'apikey:' + APIkey;
 
 var options = {
-    headers: {'Content-Type': 'audio/flac', 'Authorization': auth},
+    headers: {'Content-Type': 'audio/flac', 'Authorization': 'Basic ' + Buffer.from(auth).toString('base64')},
 };
-var ws = new WebSocket(url, options);
+var ws = new WebSocket(url+endpoint, options);
 
 ws.on('open', function open() {
   var something = "_audio/audio-file.flac";
@@ -27,7 +28,7 @@ ws.on('open', function open() {
     };
 
   ws.send(JSON.stringify(settings));
-  var data = new Buffer.from(fs.readFileSync(something));
+  var data = Buffer.from(fs.readFileSync(something));
   ws.send(data);
   var done = {"action": "stop"};
   ws.send(JSON.stringify(done));
