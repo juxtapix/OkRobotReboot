@@ -3,10 +3,9 @@ var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
 var recognition = new SpeechRecognition();
-recognition.continuous = false;
+recognition.continuous = true;
 recognition.interimResults = false;
 recognition.lang = 'en-US';
-recognition.maxAlternatives = 1;
 
 var toggler = document.querySelector('.toggle-switch');
 
